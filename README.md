@@ -15,9 +15,12 @@ A very simple SAAJ based client implementation to invoke a MSS Signature using t
 
 ## How To
 
-### Create PKCS12 keystore from key and crt files. Use the same passwords as defined in the `mobileid.properties` file.
-openssl pkcs12 -inkey mycert.key -in mycert.crt -export -out keys.pkcs12
-keytool -importkeystore -destkeystore mykeystore.jks -srckeystore keys.pkcs12 -srcstoretype pkcs12 -deststoretype pkcs12
+### Keystore
+Create PKCS12 keystore from key and crt files. Use the same passwords as defined in the `mobileid.properties` file.
+```
+$ openssl pkcs12 -inkey mycert.key -in mycert.crt -export -out keys.pkcs12
+$ keytool -importkeystore -destkeystore mykeystore.jks -srckeystore keys.pkcs12 -srcstoretype pkcs12 -deststoretype pkcs12
+```
 
 ### Run java
 Refer to the `README.me` in the related subfolder
