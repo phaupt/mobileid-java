@@ -13,31 +13,31 @@ import org.etsi.uri.ts102204.v1_1.MssURIType;
 
 
 /**
- * <p>Java-Klasse für anonymous complex type.
+ * <p>Java class for anonymous complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType>
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="ServiceResponse" maxOccurs="unbounded" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="Description" type="{http://uri.etsi.org/TS102204/v1.1.2#}mssURIType"/>
- *                   &lt;element ref="{http://mid.swisscom.ch/TS102204/as/v1.0}SubscriberInfo" minOccurs="0"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="ServiceResponse" maxOccurs="unbounded" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="Description" type="{http://uri.etsi.org/TS102204/v1.1.2#}mssURIType"/&gt;
+ *                   &lt;element ref="{http://mid.swisscom.ch/TS102204/as/v1.0}SubscriberInfo" minOccurs="0"/&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -83,21 +83,21 @@ public class ServiceResponses {
 
 
     /**
-     * <p>Java-Klasse für anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="Description" type="{http://uri.etsi.org/TS102204/v1.1.2#}mssURIType"/>
-     *         &lt;element ref="{http://mid.swisscom.ch/TS102204/as/v1.0}SubscriberInfo" minOccurs="0"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="Description" type="{http://uri.etsi.org/TS102204/v1.1.2#}mssURIType"/&gt;
+     *         &lt;element ref="{http://mid.swisscom.ch/TS102204/as/v1.0}SubscriberInfo" minOccurs="0"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -115,7 +115,7 @@ public class ServiceResponses {
         protected SubscriberInfo subscriberInfo;
 
         /**
-         * Ruft den Wert der description-Eigenschaft ab.
+         * Gets the value of the description property.
          * 
          * @return
          *     possible object is
@@ -127,7 +127,7 @@ public class ServiceResponses {
         }
 
         /**
-         * Legt den Wert der description-Eigenschaft fest.
+         * Sets the value of the description property.
          * 
          * @param value
          *     allowed object is
@@ -139,7 +139,7 @@ public class ServiceResponses {
         }
 
         /**
-         * Ruft den Wert der subscriberInfo-Eigenschaft ab.
+         * Gets the value of the subscriberInfo property.
          * 
          * @return
          *     possible object is
@@ -151,7 +151,7 @@ public class ServiceResponses {
         }
 
         /**
-         * Legt den Wert der subscriberInfo-Eigenschaft fest.
+         * Sets the value of the subscriberInfo property.
          * 
          * @param value
          *     allowed object is

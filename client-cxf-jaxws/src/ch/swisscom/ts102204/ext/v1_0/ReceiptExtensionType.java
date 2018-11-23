@@ -15,28 +15,28 @@ import javax.xml.namespace.QName;
 
 
 /**
- * <p>Java-Klasse für ReceiptExtensionType complex type.
+ * <p>Java class for ReceiptExtensionType complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="ReceiptExtensionType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="ReceiptProfile" type="{http://www.swisscom.ch/TS102204/ext/v1.0.0}ReceiptProfileType" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="ReceiptMessagingMode" use="required" type="{http://www.swisscom.ch/TS102204/ext/v1.0.0}ReceiptMessagingModeType" />
- *       &lt;attribute name="TimeOut" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" />
- *       &lt;attribute name="RetryTimeOut" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" />
- *       &lt;attribute name="NextRetry" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" />
- *       &lt;attribute name="UserAck" type="{http://www.w3.org/2001/XMLSchema}boolean" />
- *       &lt;attribute name="UserResponse" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="FaultMessage" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;anyAttribute processContents='lax' namespace='##other'/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="ReceiptExtensionType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="ReceiptProfile" type="{http://www.swisscom.ch/TS102204/ext/v1.0.0}ReceiptProfileType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="ReceiptMessagingMode" use="required" type="{http://www.swisscom.ch/TS102204/ext/v1.0.0}ReceiptMessagingModeType" /&gt;
+ *       &lt;attribute name="TimeOut" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" /&gt;
+ *       &lt;attribute name="RetryTimeOut" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" /&gt;
+ *       &lt;attribute name="NextRetry" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" /&gt;
+ *       &lt;attribute name="UserAck" type="{http://www.w3.org/2001/XMLSchema}boolean" /&gt;
+ *       &lt;attribute name="UserResponse" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="FaultMessage" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;anyAttribute processContents='lax' namespace='##other'/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -70,7 +70,7 @@ public class ReceiptExtensionType {
     private Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
     /**
-     * Ruft den Wert der receiptProfile-Eigenschaft ab.
+     * Gets the value of the receiptProfile property.
      * 
      * @return
      *     possible object is
@@ -82,7 +82,7 @@ public class ReceiptExtensionType {
     }
 
     /**
-     * Legt den Wert der receiptProfile-Eigenschaft fest.
+     * Sets the value of the receiptProfile property.
      * 
      * @param value
      *     allowed object is
@@ -94,7 +94,7 @@ public class ReceiptExtensionType {
     }
 
     /**
-     * Ruft den Wert der receiptMessagingMode-Eigenschaft ab.
+     * Gets the value of the receiptMessagingMode property.
      * 
      * @return
      *     possible object is
@@ -106,7 +106,7 @@ public class ReceiptExtensionType {
     }
 
     /**
-     * Legt den Wert der receiptMessagingMode-Eigenschaft fest.
+     * Sets the value of the receiptMessagingMode property.
      * 
      * @param value
      *     allowed object is
@@ -118,7 +118,7 @@ public class ReceiptExtensionType {
     }
 
     /**
-     * Ruft den Wert der timeOut-Eigenschaft ab.
+     * Gets the value of the timeOut property.
      * 
      * @return
      *     possible object is
@@ -130,7 +130,7 @@ public class ReceiptExtensionType {
     }
 
     /**
-     * Legt den Wert der timeOut-Eigenschaft fest.
+     * Sets the value of the timeOut property.
      * 
      * @param value
      *     allowed object is
@@ -142,7 +142,7 @@ public class ReceiptExtensionType {
     }
 
     /**
-     * Ruft den Wert der retryTimeOut-Eigenschaft ab.
+     * Gets the value of the retryTimeOut property.
      * 
      * @return
      *     possible object is
@@ -154,7 +154,7 @@ public class ReceiptExtensionType {
     }
 
     /**
-     * Legt den Wert der retryTimeOut-Eigenschaft fest.
+     * Sets the value of the retryTimeOut property.
      * 
      * @param value
      *     allowed object is
@@ -166,7 +166,7 @@ public class ReceiptExtensionType {
     }
 
     /**
-     * Ruft den Wert der nextRetry-Eigenschaft ab.
+     * Gets the value of the nextRetry property.
      * 
      * @return
      *     possible object is
@@ -178,7 +178,7 @@ public class ReceiptExtensionType {
     }
 
     /**
-     * Legt den Wert der nextRetry-Eigenschaft fest.
+     * Sets the value of the nextRetry property.
      * 
      * @param value
      *     allowed object is
@@ -190,7 +190,7 @@ public class ReceiptExtensionType {
     }
 
     /**
-     * Ruft den Wert der userAck-Eigenschaft ab.
+     * Gets the value of the userAck property.
      * 
      * @return
      *     possible object is
@@ -202,7 +202,7 @@ public class ReceiptExtensionType {
     }
 
     /**
-     * Legt den Wert der userAck-Eigenschaft fest.
+     * Sets the value of the userAck property.
      * 
      * @param value
      *     allowed object is
@@ -214,7 +214,7 @@ public class ReceiptExtensionType {
     }
 
     /**
-     * Ruft den Wert der userResponse-Eigenschaft ab.
+     * Gets the value of the userResponse property.
      * 
      * @return
      *     possible object is
@@ -226,7 +226,7 @@ public class ReceiptExtensionType {
     }
 
     /**
-     * Legt den Wert der userResponse-Eigenschaft fest.
+     * Sets the value of the userResponse property.
      * 
      * @param value
      *     allowed object is
@@ -238,7 +238,7 @@ public class ReceiptExtensionType {
     }
 
     /**
-     * Ruft den Wert der faultMessage-Eigenschaft ab.
+     * Gets the value of the faultMessage property.
      * 
      * @return
      *     possible object is
@@ -250,7 +250,7 @@ public class ReceiptExtensionType {
     }
 
     /**
-     * Legt den Wert der faultMessage-Eigenschaft fest.
+     * Sets the value of the faultMessage property.
      * 
      * @param value
      *     allowed object is

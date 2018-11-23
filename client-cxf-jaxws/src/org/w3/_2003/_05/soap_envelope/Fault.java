@@ -10,24 +10,24 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für Fault complex type.
+ * <p>Java class for Fault complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="Fault">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Code" type="{http://www.w3.org/2003/05/soap-envelope}faultcode"/>
- *         &lt;element name="Reason" type="{http://www.w3.org/2003/05/soap-envelope}faultreason"/>
- *         &lt;element name="Node" type="{http://www.w3.org/2001/XMLSchema}anyURI" minOccurs="0"/>
- *         &lt;element name="Role" type="{http://www.w3.org/2001/XMLSchema}anyURI" minOccurs="0"/>
- *         &lt;element name="Detail" type="{http://www.w3.org/2003/05/soap-envelope}detail" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Fault"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Code" type="{http://www.w3.org/2003/05/soap-envelope}faultcode"/&gt;
+ *         &lt;element name="Reason" type="{http://www.w3.org/2003/05/soap-envelope}faultreason"/&gt;
+ *         &lt;element name="Node" type="{http://www.w3.org/2001/XMLSchema}anyURI" minOccurs="0"/&gt;
+ *         &lt;element name="Role" type="{http://www.w3.org/2001/XMLSchema}anyURI" minOccurs="0"/&gt;
+ *         &lt;element name="Detail" type="{http://www.w3.org/2003/05/soap-envelope}detail" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -57,7 +57,7 @@ public class Fault {
     protected Detail detail;
 
     /**
-     * Ruft den Wert der code-Eigenschaft ab.
+     * Gets the value of the code property.
      * 
      * @return
      *     possible object is
@@ -69,7 +69,7 @@ public class Fault {
     }
 
     /**
-     * Legt den Wert der code-Eigenschaft fest.
+     * Sets the value of the code property.
      * 
      * @param value
      *     allowed object is
@@ -81,7 +81,7 @@ public class Fault {
     }
 
     /**
-     * Ruft den Wert der reason-Eigenschaft ab.
+     * Gets the value of the reason property.
      * 
      * @return
      *     possible object is
@@ -93,7 +93,7 @@ public class Fault {
     }
 
     /**
-     * Legt den Wert der reason-Eigenschaft fest.
+     * Sets the value of the reason property.
      * 
      * @param value
      *     allowed object is
@@ -105,7 +105,7 @@ public class Fault {
     }
 
     /**
-     * Ruft den Wert der node-Eigenschaft ab.
+     * Gets the value of the node property.
      * 
      * @return
      *     possible object is
@@ -117,7 +117,7 @@ public class Fault {
     }
 
     /**
-     * Legt den Wert der node-Eigenschaft fest.
+     * Sets the value of the node property.
      * 
      * @param value
      *     allowed object is
@@ -129,7 +129,7 @@ public class Fault {
     }
 
     /**
-     * Ruft den Wert der role-Eigenschaft ab.
+     * Gets the value of the role property.
      * 
      * @return
      *     possible object is
@@ -141,7 +141,7 @@ public class Fault {
     }
 
     /**
-     * Legt den Wert der role-Eigenschaft fest.
+     * Sets the value of the role property.
      * 
      * @param value
      *     allowed object is
@@ -153,7 +153,7 @@ public class Fault {
     }
 
     /**
-     * Ruft den Wert der detail-Eigenschaft ab.
+     * Gets the value of the detail property.
      * 
      * @return
      *     possible object is
@@ -165,7 +165,7 @@ public class Fault {
     }
 
     /**
-     * Legt den Wert der detail-Eigenschaft fest.
+     * Sets the value of the detail property.
      * 
      * @param value
      *     allowed object is

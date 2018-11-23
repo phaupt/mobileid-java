@@ -13,23 +13,23 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java-Klasse für MSS_ReceiptReqType complex type.
+ * <p>Java class for MSS_ReceiptReqType complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="MSS_ReceiptReqType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://uri.etsi.org/TS102204/v1.1.2#}MessageAbstractType">
- *       &lt;sequence>
- *         &lt;element name="MobileUser" type="{http://uri.etsi.org/TS102204/v1.1.2#}MobileUserType"/>
- *         &lt;element name="Status" type="{http://uri.etsi.org/TS102204/v1.1.2#}StatusType" minOccurs="0"/>
- *         &lt;element name="Message" type="{http://uri.etsi.org/TS102204/v1.1.2#}DataType" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="MSSP_TransID" use="required" type="{http://www.w3.org/2001/XMLSchema}NCName" />
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="MSS_ReceiptReqType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://uri.etsi.org/TS102204/v1.1.2#}MessageAbstractType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="MobileUser" type="{http://uri.etsi.org/TS102204/v1.1.2#}MobileUserType"/&gt;
+ *         &lt;element name="Status" type="{http://uri.etsi.org/TS102204/v1.1.2#}StatusType" minOccurs="0"/&gt;
+ *         &lt;element name="Message" type="{http://uri.etsi.org/TS102204/v1.1.2#}DataType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="MSSP_TransID" use="required" type="{http://www.w3.org/2001/XMLSchema}NCName" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -57,7 +57,7 @@ public class MSSReceiptReq
     protected String msspTransID;
 
     /**
-     * Ruft den Wert der mobileUser-Eigenschaft ab.
+     * Gets the value of the mobileUser property.
      * 
      * @return
      *     possible object is
@@ -69,7 +69,7 @@ public class MSSReceiptReq
     }
 
     /**
-     * Legt den Wert der mobileUser-Eigenschaft fest.
+     * Sets the value of the mobileUser property.
      * 
      * @param value
      *     allowed object is
@@ -81,7 +81,7 @@ public class MSSReceiptReq
     }
 
     /**
-     * Ruft den Wert der status-Eigenschaft ab.
+     * Gets the value of the status property.
      * 
      * @return
      *     possible object is
@@ -93,7 +93,7 @@ public class MSSReceiptReq
     }
 
     /**
-     * Legt den Wert der status-Eigenschaft fest.
+     * Sets the value of the status property.
      * 
      * @param value
      *     allowed object is
@@ -105,7 +105,7 @@ public class MSSReceiptReq
     }
 
     /**
-     * Ruft den Wert der message-Eigenschaft ab.
+     * Gets the value of the message property.
      * 
      * @return
      *     possible object is
@@ -117,7 +117,7 @@ public class MSSReceiptReq
     }
 
     /**
-     * Legt den Wert der message-Eigenschaft fest.
+     * Sets the value of the message property.
      * 
      * @param value
      *     allowed object is
@@ -129,7 +129,7 @@ public class MSSReceiptReq
     }
 
     /**
-     * Ruft den Wert der msspTransID-Eigenschaft ab.
+     * Gets the value of the msspTransID property.
      * 
      * @return
      *     possible object is
@@ -141,7 +141,7 @@ public class MSSReceiptReq
     }
 
     /**
-     * Legt den Wert der msspTransID-Eigenschaft fest.
+     * Sets the value of the msspTransID property.
      * 
      * @param value
      *     allowed object is

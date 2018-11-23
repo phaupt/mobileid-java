@@ -15,45 +15,45 @@ import javax.xml.datatype.XMLGregorianCalendar;
 
 
 /**
- * <p>Java-Klasse für MessageAbstractType complex type.
+ * <p>Java class for MessageAbstractType complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="MessageAbstractType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="AP_Info">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;attribute name="AP_ID" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
- *                 &lt;attribute name="AP_PWD" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
- *                 &lt;attribute name="AP_TransID" use="required" type="{http://www.w3.org/2001/XMLSchema}NCName" />
- *                 &lt;attribute name="Instant" use="required" type="{http://www.w3.org/2001/XMLSchema}dateTime" />
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *         &lt;element name="MSSP_Info">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="MSSP_ID" type="{http://uri.etsi.org/TS102204/v1.1.2#}MeshMemberType"/>
- *                 &lt;/sequence>
- *                 &lt;attribute name="Instant" type="{http://www.w3.org/2001/XMLSchema}dateTime" />
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *       &lt;attribute name="MajorVersion" use="required" type="{http://www.w3.org/2001/XMLSchema}integer" />
- *       &lt;attribute name="MinorVersion" use="required" type="{http://www.w3.org/2001/XMLSchema}integer" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="MessageAbstractType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="AP_Info"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;attribute name="AP_ID" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+ *                 &lt;attribute name="AP_PWD" use="required" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *                 &lt;attribute name="AP_TransID" use="required" type="{http://www.w3.org/2001/XMLSchema}NCName" /&gt;
+ *                 &lt;attribute name="Instant" use="required" type="{http://www.w3.org/2001/XMLSchema}dateTime" /&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *         &lt;element name="MSSP_Info"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="MSSP_ID" type="{http://uri.etsi.org/TS102204/v1.1.2#}MeshMemberType"/&gt;
+ *                 &lt;/sequence&gt;
+ *                 &lt;attribute name="Instant" type="{http://www.w3.org/2001/XMLSchema}dateTime" /&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="MajorVersion" use="required" type="{http://www.w3.org/2001/XMLSchema}integer" /&gt;
+ *       &lt;attribute name="MinorVersion" use="required" type="{http://www.w3.org/2001/XMLSchema}integer" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -64,14 +64,14 @@ import javax.xml.datatype.XMLGregorianCalendar;
     "msspInfo"
 })
 @XmlSeeAlso({
-    MSSReceiptReq.class,
     MSSReceiptResp.class,
-    MSSSignatureReq.class,
-    MSSProfileReq.class,
+    MSSReceiptReq.class,
     MSSProfileResp.class,
-    MSSStatusReq.class,
+    MSSProfileReq.class,
     MSSStatusResp.class,
-    MSSSignatureResp.class
+    MSSStatusReq.class,
+    MSSSignatureResp.class,
+    MSSSignatureReq.class
 })
 public abstract class MessageAbstractType {
 
@@ -85,7 +85,7 @@ public abstract class MessageAbstractType {
     protected BigInteger minorVersion;
 
     /**
-     * Ruft den Wert der apInfo-Eigenschaft ab.
+     * Gets the value of the apInfo property.
      * 
      * @return
      *     possible object is
@@ -97,7 +97,7 @@ public abstract class MessageAbstractType {
     }
 
     /**
-     * Legt den Wert der apInfo-Eigenschaft fest.
+     * Sets the value of the apInfo property.
      * 
      * @param value
      *     allowed object is
@@ -109,7 +109,7 @@ public abstract class MessageAbstractType {
     }
 
     /**
-     * Ruft den Wert der msspInfo-Eigenschaft ab.
+     * Gets the value of the msspInfo property.
      * 
      * @return
      *     possible object is
@@ -121,7 +121,7 @@ public abstract class MessageAbstractType {
     }
 
     /**
-     * Legt den Wert der msspInfo-Eigenschaft fest.
+     * Sets the value of the msspInfo property.
      * 
      * @param value
      *     allowed object is
@@ -133,7 +133,7 @@ public abstract class MessageAbstractType {
     }
 
     /**
-     * Ruft den Wert der majorVersion-Eigenschaft ab.
+     * Gets the value of the majorVersion property.
      * 
      * @return
      *     possible object is
@@ -145,7 +145,7 @@ public abstract class MessageAbstractType {
     }
 
     /**
-     * Legt den Wert der majorVersion-Eigenschaft fest.
+     * Sets the value of the majorVersion property.
      * 
      * @param value
      *     allowed object is
@@ -157,7 +157,7 @@ public abstract class MessageAbstractType {
     }
 
     /**
-     * Ruft den Wert der minorVersion-Eigenschaft ab.
+     * Gets the value of the minorVersion property.
      * 
      * @return
      *     possible object is
@@ -169,7 +169,7 @@ public abstract class MessageAbstractType {
     }
 
     /**
-     * Legt den Wert der minorVersion-Eigenschaft fest.
+     * Sets the value of the minorVersion property.
      * 
      * @param value
      *     allowed object is
@@ -182,21 +182,21 @@ public abstract class MessageAbstractType {
 
 
     /**
-     * <p>Java-Klasse für anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;attribute name="AP_ID" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" />
-     *       &lt;attribute name="AP_PWD" use="required" type="{http://www.w3.org/2001/XMLSchema}string" />
-     *       &lt;attribute name="AP_TransID" use="required" type="{http://www.w3.org/2001/XMLSchema}NCName" />
-     *       &lt;attribute name="Instant" use="required" type="{http://www.w3.org/2001/XMLSchema}dateTime" />
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;attribute name="AP_ID" use="required" type="{http://www.w3.org/2001/XMLSchema}anyURI" /&gt;
+     *       &lt;attribute name="AP_PWD" use="required" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+     *       &lt;attribute name="AP_TransID" use="required" type="{http://www.w3.org/2001/XMLSchema}NCName" /&gt;
+     *       &lt;attribute name="Instant" use="required" type="{http://www.w3.org/2001/XMLSchema}dateTime" /&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -219,7 +219,7 @@ public abstract class MessageAbstractType {
         protected XMLGregorianCalendar instant;
 
         /**
-         * Ruft den Wert der apid-Eigenschaft ab.
+         * Gets the value of the apid property.
          * 
          * @return
          *     possible object is
@@ -231,7 +231,7 @@ public abstract class MessageAbstractType {
         }
 
         /**
-         * Legt den Wert der apid-Eigenschaft fest.
+         * Sets the value of the apid property.
          * 
          * @param value
          *     allowed object is
@@ -243,7 +243,7 @@ public abstract class MessageAbstractType {
         }
 
         /**
-         * Ruft den Wert der appwd-Eigenschaft ab.
+         * Gets the value of the appwd property.
          * 
          * @return
          *     possible object is
@@ -255,7 +255,7 @@ public abstract class MessageAbstractType {
         }
 
         /**
-         * Legt den Wert der appwd-Eigenschaft fest.
+         * Sets the value of the appwd property.
          * 
          * @param value
          *     allowed object is
@@ -267,7 +267,7 @@ public abstract class MessageAbstractType {
         }
 
         /**
-         * Ruft den Wert der apTransID-Eigenschaft ab.
+         * Gets the value of the apTransID property.
          * 
          * @return
          *     possible object is
@@ -279,7 +279,7 @@ public abstract class MessageAbstractType {
         }
 
         /**
-         * Legt den Wert der apTransID-Eigenschaft fest.
+         * Sets the value of the apTransID property.
          * 
          * @param value
          *     allowed object is
@@ -291,7 +291,7 @@ public abstract class MessageAbstractType {
         }
 
         /**
-         * Ruft den Wert der instant-Eigenschaft ab.
+         * Gets the value of the instant property.
          * 
          * @return
          *     possible object is
@@ -303,7 +303,7 @@ public abstract class MessageAbstractType {
         }
 
         /**
-         * Legt den Wert der instant-Eigenschaft fest.
+         * Sets the value of the instant property.
          * 
          * @param value
          *     allowed object is
@@ -318,21 +318,21 @@ public abstract class MessageAbstractType {
 
 
     /**
-     * <p>Java-Klasse für anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="MSSP_ID" type="{http://uri.etsi.org/TS102204/v1.1.2#}MeshMemberType"/>
-     *       &lt;/sequence>
-     *       &lt;attribute name="Instant" type="{http://www.w3.org/2001/XMLSchema}dateTime" />
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="MSSP_ID" type="{http://uri.etsi.org/TS102204/v1.1.2#}MeshMemberType"/&gt;
+     *       &lt;/sequence&gt;
+     *       &lt;attribute name="Instant" type="{http://www.w3.org/2001/XMLSchema}dateTime" /&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 
@@ -350,7 +350,7 @@ public abstract class MessageAbstractType {
         protected XMLGregorianCalendar instant;
 
         /**
-         * Ruft den Wert der msspid-Eigenschaft ab.
+         * Gets the value of the msspid property.
          * 
          * @return
          *     possible object is
@@ -362,7 +362,7 @@ public abstract class MessageAbstractType {
         }
 
         /**
-         * Legt den Wert der msspid-Eigenschaft fest.
+         * Sets the value of the msspid property.
          * 
          * @param value
          *     allowed object is
@@ -374,7 +374,7 @@ public abstract class MessageAbstractType {
         }
 
         /**
-         * Ruft den Wert der instant-Eigenschaft ab.
+         * Gets the value of the instant property.
          * 
          * @return
          *     possible object is
@@ -386,7 +386,7 @@ public abstract class MessageAbstractType {
         }
 
         /**
-         * Legt den Wert der instant-Eigenschaft fest.
+         * Sets the value of the instant property.
          * 
          * @param value
          *     allowed object is

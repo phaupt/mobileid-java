@@ -30,11 +30,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Body }
+     * Create an instance of {@link Envelope }
      * 
      */
-    public Body createBody() {
-        return new Body();
+    public Envelope createEnvelope() {
+        return new Envelope();
     }
 
     /**
@@ -46,11 +46,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link Envelope }
+     * Create an instance of {@link Body }
      * 
      */
-    public Envelope createEnvelope() {
-        return new Envelope();
+    public Body createBody() {
+        return new Body();
     }
 
     /**

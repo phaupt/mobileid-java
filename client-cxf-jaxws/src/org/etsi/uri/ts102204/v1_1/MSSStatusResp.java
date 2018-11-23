@@ -9,22 +9,22 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für MSS_StatusRespType complex type.
+ * <p>Java class for MSS_StatusRespType complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="MSS_StatusRespType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://uri.etsi.org/TS102204/v1.1.2#}MessageAbstractType">
- *       &lt;sequence>
- *         &lt;element name="MobileUser" type="{http://uri.etsi.org/TS102204/v1.1.2#}MobileUserType"/>
- *         &lt;element name="MSS_Signature" type="{http://uri.etsi.org/TS102204/v1.1.2#}SignatureType" minOccurs="0"/>
- *         &lt;element name="Status" type="{http://uri.etsi.org/TS102204/v1.1.2#}StatusType"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="MSS_StatusRespType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://uri.etsi.org/TS102204/v1.1.2#}MessageAbstractType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="MobileUser" type="{http://uri.etsi.org/TS102204/v1.1.2#}MobileUserType"/&gt;
+ *         &lt;element name="MSS_Signature" type="{http://uri.etsi.org/TS102204/v1.1.2#}SignatureType" minOccurs="0"/&gt;
+ *         &lt;element name="Status" type="{http://uri.etsi.org/TS102204/v1.1.2#}StatusType"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -48,7 +48,7 @@ public class MSSStatusResp
     protected StatusType status;
 
     /**
-     * Ruft den Wert der mobileUser-Eigenschaft ab.
+     * Gets the value of the mobileUser property.
      * 
      * @return
      *     possible object is
@@ -60,7 +60,7 @@ public class MSSStatusResp
     }
 
     /**
-     * Legt den Wert der mobileUser-Eigenschaft fest.
+     * Sets the value of the mobileUser property.
      * 
      * @param value
      *     allowed object is
@@ -72,7 +72,7 @@ public class MSSStatusResp
     }
 
     /**
-     * Ruft den Wert der mssSignature-Eigenschaft ab.
+     * Gets the value of the mssSignature property.
      * 
      * @return
      *     possible object is
@@ -84,7 +84,7 @@ public class MSSStatusResp
     }
 
     /**
-     * Legt den Wert der mssSignature-Eigenschaft fest.
+     * Sets the value of the mssSignature property.
      * 
      * @param value
      *     allowed object is
@@ -96,7 +96,7 @@ public class MSSStatusResp
     }
 
     /**
-     * Ruft den Wert der status-Eigenschaft ab.
+     * Gets the value of the status property.
      * 
      * @return
      *     possible object is
@@ -108,7 +108,7 @@ public class MSSStatusResp
     }
 
     /**
-     * Legt den Wert der status-Eigenschaft fest.
+     * Sets the value of the status property.
      * 
      * @param value
      *     allowed object is

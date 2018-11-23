@@ -24,8 +24,8 @@ import javax.xml.namespace.QName;
 @XmlRegistry
 public class ObjectFactory {
 
-    private final static QName _Expires_QNAME = new QName("http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd", "Expires");
     private final static QName _Created_QNAME = new QName("http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd", "Created");
+    private final static QName _Expires_QNAME = new QName("http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd", "Expires");
 
     /**
      * Create a new ObjectFactory that can be used to create new instances of schema derived classes for package: org.oasis_open.docs.wss._2004._01.oasis_200401_wss_wssecurity_utility_1_0
@@ -35,19 +35,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link AttributedDateTime }
-     * 
-     */
-    public AttributedDateTime createAttributedDateTime() {
-        return new AttributedDateTime();
-    }
-
-    /**
      * Create an instance of {@link Timestamp }
      * 
      */
     public Timestamp createTimestamp() {
         return new Timestamp();
+    }
+
+    /**
+     * Create an instance of {@link AttributedDateTime }
+     * 
+     */
+    public AttributedDateTime createAttributedDateTime() {
+        return new AttributedDateTime();
     }
 
     /**
@@ -62,18 +62,18 @@ public class ObjectFactory {
      * Create an instance of {@link JAXBElement }{@code <}{@link AttributedDateTime }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd", name = "Expires")
-    public JAXBElement<AttributedDateTime> createExpires(AttributedDateTime value) {
-        return new JAXBElement<AttributedDateTime>(_Expires_QNAME, AttributedDateTime.class, null, value);
+    @XmlElementDecl(namespace = "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd", name = "Created")
+    public JAXBElement<AttributedDateTime> createCreated(AttributedDateTime value) {
+        return new JAXBElement<AttributedDateTime>(_Created_QNAME, AttributedDateTime.class, null, value);
     }
 
     /**
      * Create an instance of {@link JAXBElement }{@code <}{@link AttributedDateTime }{@code >}}
      * 
      */
-    @XmlElementDecl(namespace = "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd", name = "Created")
-    public JAXBElement<AttributedDateTime> createCreated(AttributedDateTime value) {
-        return new JAXBElement<AttributedDateTime>(_Created_QNAME, AttributedDateTime.class, null, value);
+    @XmlElementDecl(namespace = "http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd", name = "Expires")
+    public JAXBElement<AttributedDateTime> createExpires(AttributedDateTime value) {
+        return new JAXBElement<AttributedDateTime>(_Expires_QNAME, AttributedDateTime.class, null, value);
     }
 
 }

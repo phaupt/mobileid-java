@@ -14,35 +14,35 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für MSS_SignatureReqType complex type.
+ * <p>Java class for MSS_SignatureReqType complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="MSS_SignatureReqType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://uri.etsi.org/TS102204/v1.1.2#}MessageAbstractType">
- *       &lt;sequence>
- *         &lt;element name="MobileUser" type="{http://uri.etsi.org/TS102204/v1.1.2#}MobileUserType"/>
- *         &lt;element name="DataToBeSigned" type="{http://uri.etsi.org/TS102204/v1.1.2#}DataType"/>
- *         &lt;element name="SignatureProfile" type="{http://uri.etsi.org/TS102204/v1.1.2#}mssURIType" minOccurs="0"/>
- *         &lt;element name="AdditionalServices" minOccurs="0">
- *           &lt;complexType>
- *             &lt;complexContent>
- *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *                 &lt;sequence>
- *                   &lt;element name="Service" type="{http://uri.etsi.org/TS102204/v1.1.2#}AdditionalServiceType" maxOccurs="unbounded"/>
- *                 &lt;/sequence>
- *               &lt;/restriction>
- *             &lt;/complexContent>
- *           &lt;/complexType>
- *         &lt;/element>
- *       &lt;/sequence>
- *       &lt;attribute name="TimeOut" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" />
- *       &lt;attribute name="MessagingMode" use="required" type="{http://uri.etsi.org/TS102204/v1.1.2#}MessagingModeType" />
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="MSS_SignatureReqType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://uri.etsi.org/TS102204/v1.1.2#}MessageAbstractType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="MobileUser" type="{http://uri.etsi.org/TS102204/v1.1.2#}MobileUserType"/&gt;
+ *         &lt;element name="DataToBeSigned" type="{http://uri.etsi.org/TS102204/v1.1.2#}DataType"/&gt;
+ *         &lt;element name="SignatureProfile" type="{http://uri.etsi.org/TS102204/v1.1.2#}mssURIType" minOccurs="0"/&gt;
+ *         &lt;element name="AdditionalServices" minOccurs="0"&gt;
+ *           &lt;complexType&gt;
+ *             &lt;complexContent&gt;
+ *               &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *                 &lt;sequence&gt;
+ *                   &lt;element name="Service" type="{http://uri.etsi.org/TS102204/v1.1.2#}AdditionalServiceType" maxOccurs="unbounded"/&gt;
+ *                 &lt;/sequence&gt;
+ *               &lt;/restriction&gt;
+ *             &lt;/complexContent&gt;
+ *           &lt;/complexType&gt;
+ *         &lt;/element&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="TimeOut" type="{http://www.w3.org/2001/XMLSchema}positiveInteger" /&gt;
+ *       &lt;attribute name="MessagingMode" use="required" type="{http://uri.etsi.org/TS102204/v1.1.2#}MessagingModeType" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -74,7 +74,7 @@ public class MSSSignatureReq
     protected MessagingModeType messagingMode;
 
     /**
-     * Ruft den Wert der mobileUser-Eigenschaft ab.
+     * Gets the value of the mobileUser property.
      * 
      * @return
      *     possible object is
@@ -86,7 +86,7 @@ public class MSSSignatureReq
     }
 
     /**
-     * Legt den Wert der mobileUser-Eigenschaft fest.
+     * Sets the value of the mobileUser property.
      * 
      * @param value
      *     allowed object is
@@ -98,7 +98,7 @@ public class MSSSignatureReq
     }
 
     /**
-     * Ruft den Wert der dataToBeSigned-Eigenschaft ab.
+     * Gets the value of the dataToBeSigned property.
      * 
      * @return
      *     possible object is
@@ -110,7 +110,7 @@ public class MSSSignatureReq
     }
 
     /**
-     * Legt den Wert der dataToBeSigned-Eigenschaft fest.
+     * Sets the value of the dataToBeSigned property.
      * 
      * @param value
      *     allowed object is
@@ -122,7 +122,7 @@ public class MSSSignatureReq
     }
 
     /**
-     * Ruft den Wert der signatureProfile-Eigenschaft ab.
+     * Gets the value of the signatureProfile property.
      * 
      * @return
      *     possible object is
@@ -134,7 +134,7 @@ public class MSSSignatureReq
     }
 
     /**
-     * Legt den Wert der signatureProfile-Eigenschaft fest.
+     * Sets the value of the signatureProfile property.
      * 
      * @param value
      *     allowed object is
@@ -146,7 +146,7 @@ public class MSSSignatureReq
     }
 
     /**
-     * Ruft den Wert der additionalServices-Eigenschaft ab.
+     * Gets the value of the additionalServices property.
      * 
      * @return
      *     possible object is
@@ -158,7 +158,7 @@ public class MSSSignatureReq
     }
 
     /**
-     * Legt den Wert der additionalServices-Eigenschaft fest.
+     * Sets the value of the additionalServices property.
      * 
      * @param value
      *     allowed object is
@@ -170,7 +170,7 @@ public class MSSSignatureReq
     }
 
     /**
-     * Ruft den Wert der timeOut-Eigenschaft ab.
+     * Gets the value of the timeOut property.
      * 
      * @return
      *     possible object is
@@ -182,7 +182,7 @@ public class MSSSignatureReq
     }
 
     /**
-     * Legt den Wert der timeOut-Eigenschaft fest.
+     * Sets the value of the timeOut property.
      * 
      * @param value
      *     allowed object is
@@ -194,7 +194,7 @@ public class MSSSignatureReq
     }
 
     /**
-     * Ruft den Wert der messagingMode-Eigenschaft ab.
+     * Gets the value of the messagingMode property.
      * 
      * @return
      *     possible object is
@@ -206,7 +206,7 @@ public class MSSSignatureReq
     }
 
     /**
-     * Legt den Wert der messagingMode-Eigenschaft fest.
+     * Sets the value of the messagingMode property.
      * 
      * @param value
      *     allowed object is
@@ -219,20 +219,20 @@ public class MSSSignatureReq
 
 
     /**
-     * <p>Java-Klasse für anonymous complex type.
+     * <p>Java class for anonymous complex type.
      * 
-     * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+     * <p>The following schema fragment specifies the expected content contained within this class.
      * 
      * <pre>
-     * &lt;complexType>
-     *   &lt;complexContent>
-     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
-     *       &lt;sequence>
-     *         &lt;element name="Service" type="{http://uri.etsi.org/TS102204/v1.1.2#}AdditionalServiceType" maxOccurs="unbounded"/>
-     *       &lt;/sequence>
-     *     &lt;/restriction>
-     *   &lt;/complexContent>
-     * &lt;/complexType>
+     * &lt;complexType&gt;
+     *   &lt;complexContent&gt;
+     *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+     *       &lt;sequence&gt;
+     *         &lt;element name="Service" type="{http://uri.etsi.org/TS102204/v1.1.2#}AdditionalServiceType" maxOccurs="unbounded"/&gt;
+     *       &lt;/sequence&gt;
+     *     &lt;/restriction&gt;
+     *   &lt;/complexContent&gt;
+     * &lt;/complexType&gt;
      * </pre>
      * 
      * 

@@ -9,21 +9,21 @@ import javax.xml.namespace.QName;
 
 
 /**
- * <p>Java-Klasse für faultcode complex type.
+ * <p>Java class for faultcode complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="faultcode">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="Value" type="{http://www.w3.org/2003/05/soap-envelope}faultcodeEnum"/>
- *         &lt;element name="Subcode" type="{http://www.w3.org/2003/05/soap-envelope}subcode" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="faultcode"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="Value" type="{http://www.w3.org/2003/05/soap-envelope}faultcodeEnum"/&gt;
+ *         &lt;element name="Subcode" type="{http://www.w3.org/2003/05/soap-envelope}subcode" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -41,7 +41,7 @@ public class Faultcode {
     protected Subcode subcode;
 
     /**
-     * Ruft den Wert der value-Eigenschaft ab.
+     * Gets the value of the value property.
      * 
      * @return
      *     possible object is
@@ -53,7 +53,7 @@ public class Faultcode {
     }
 
     /**
-     * Legt den Wert der value-Eigenschaft fest.
+     * Sets the value of the value property.
      * 
      * @param value
      *     allowed object is
@@ -65,7 +65,7 @@ public class Faultcode {
     }
 
     /**
-     * Ruft den Wert der subcode-Eigenschaft ab.
+     * Gets the value of the subcode property.
      * 
      * @return
      *     possible object is
@@ -77,7 +77,7 @@ public class Faultcode {
     }
 
     /**
-     * Legt den Wert der subcode-Eigenschaft fest.
+     * Sets the value of the subcode property.
      * 
      * @param value
      *     allowed object is

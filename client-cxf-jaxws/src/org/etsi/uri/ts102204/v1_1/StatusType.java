@@ -8,22 +8,22 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für StatusType complex type.
+ * <p>Java class for StatusType complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="StatusType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="StatusCode" type="{http://uri.etsi.org/TS102204/v1.1.2#}StatusCodeType"/>
- *         &lt;element name="StatusMessage" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/>
- *         &lt;element name="StatusDetail" type="{http://uri.etsi.org/TS102204/v1.1.2#}StatusDetailType" minOccurs="0"/>
- *       &lt;/sequence>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="StatusType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="StatusCode" type="{http://uri.etsi.org/TS102204/v1.1.2#}StatusCodeType"/&gt;
+ *         &lt;element name="StatusMessage" type="{http://www.w3.org/2001/XMLSchema}string" minOccurs="0"/&gt;
+ *         &lt;element name="StatusDetail" type="{http://uri.etsi.org/TS102204/v1.1.2#}StatusDetailType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -44,7 +44,7 @@ public class StatusType {
     protected StatusDetailType statusDetail;
 
     /**
-     * Ruft den Wert der statusCode-Eigenschaft ab.
+     * Gets the value of the statusCode property.
      * 
      * @return
      *     possible object is
@@ -56,7 +56,7 @@ public class StatusType {
     }
 
     /**
-     * Legt den Wert der statusCode-Eigenschaft fest.
+     * Sets the value of the statusCode property.
      * 
      * @param value
      *     allowed object is
@@ -68,7 +68,7 @@ public class StatusType {
     }
 
     /**
-     * Ruft den Wert der statusMessage-Eigenschaft ab.
+     * Gets the value of the statusMessage property.
      * 
      * @return
      *     possible object is
@@ -80,7 +80,7 @@ public class StatusType {
     }
 
     /**
-     * Legt den Wert der statusMessage-Eigenschaft fest.
+     * Sets the value of the statusMessage property.
      * 
      * @param value
      *     allowed object is
@@ -92,7 +92,7 @@ public class StatusType {
     }
 
     /**
-     * Ruft den Wert der statusDetail-Eigenschaft ab.
+     * Gets the value of the statusDetail property.
      * 
      * @return
      *     possible object is
@@ -104,7 +104,7 @@ public class StatusType {
     }
 
     /**
-     * Legt den Wert der statusDetail-Eigenschaft fest.
+     * Sets the value of the statusDetail property.
      * 
      * @param value
      *     allowed object is

@@ -12,18 +12,18 @@ import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter;
 
 
 /**
- * <p>Java-Klasse für MSS_StatusReqType complex type.
+ * <p>Java class for MSS_StatusReqType complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="MSS_StatusReqType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://uri.etsi.org/TS102204/v1.1.2#}MessageAbstractType">
- *       &lt;attribute name="MSSP_TransID" use="required" type="{http://www.w3.org/2001/XMLSchema}NCName" />
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="MSS_StatusReqType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://uri.etsi.org/TS102204/v1.1.2#}MessageAbstractType"&gt;
+ *       &lt;attribute name="MSSP_TransID" use="required" type="{http://www.w3.org/2001/XMLSchema}NCName" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -41,7 +41,7 @@ public class MSSStatusReq
     protected String msspTransID;
 
     /**
-     * Ruft den Wert der msspTransID-Eigenschaft ab.
+     * Gets the value of the msspTransID property.
      * 
      * @return
      *     possible object is
@@ -53,7 +53,7 @@ public class MSSStatusReq
     }
 
     /**
-     * Legt den Wert der msspTransID-Eigenschaft fest.
+     * Sets the value of the msspTransID property.
      * 
      * @param value
      *     allowed object is

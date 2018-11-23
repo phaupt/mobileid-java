@@ -64,7 +64,7 @@ public class Test_Client {
 		
 		// Configuration
 		String apID = prop.getProperty("AP_ID");
-		String msisdn = "41794706146";
+		String msisdn = "41797895164";
 		String dtbsPrefix = "Test: ";
 		String dtbsMessage = "Do you want to login?";
 		String receiptMessage = "This is a Receipt Message";

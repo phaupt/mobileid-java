@@ -13,22 +13,22 @@ import javax.xml.namespace.QName;
 
 
 /**
- * <p>Java-Klasse für Envelope complex type.
+ * <p>Java class for Envelope complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="Envelope">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://www.w3.org/2003/05/soap-envelope}Header" minOccurs="0"/>
- *         &lt;element ref="{http://www.w3.org/2003/05/soap-envelope}Body"/>
- *       &lt;/sequence>
- *       &lt;anyAttribute processContents='lax' namespace='##other'/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="Envelope"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://www.w3.org/2003/05/soap-envelope}Header" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://www.w3.org/2003/05/soap-envelope}Body"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;anyAttribute processContents='lax' namespace='##other'/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -49,7 +49,7 @@ public class Envelope {
     private Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
     /**
-     * Ruft den Wert der header-Eigenschaft ab.
+     * Gets the value of the header property.
      * 
      * @return
      *     possible object is
@@ -61,7 +61,7 @@ public class Envelope {
     }
 
     /**
-     * Legt den Wert der header-Eigenschaft fest.
+     * Sets the value of the header property.
      * 
      * @param value
      *     allowed object is
@@ -73,7 +73,7 @@ public class Envelope {
     }
 
     /**
-     * Ruft den Wert der body-Eigenschaft ab.
+     * Gets the value of the body property.
      * 
      * @return
      *     possible object is
@@ -85,7 +85,7 @@ public class Envelope {
     }
 
     /**
-     * Legt den Wert der body-Eigenschaft fest.
+     * Sets the value of the body property.
      * 
      * @param value
      *     allowed object is

@@ -38,14 +38,6 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MSSSignatureResp }
-     * 
-     */
-    public MSSSignatureResp createMSSSignatureResp() {
-        return new MSSSignatureResp();
-    }
-
-    /**
      * Create an instance of {@link org.etsi.uri.ts102204.v1_1.MessageAbstractType.APInfo }
      * 
      */
@@ -70,11 +62,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link SignatureType }
+     * Create an instance of {@link DataType }
      * 
      */
-    public SignatureType createSignatureType() {
-        return new SignatureType();
+    public DataType createDataType() {
+        return new DataType();
     }
 
     /**
@@ -86,19 +78,35 @@ public class ObjectFactory {
     }
 
     /**
+     * Create an instance of {@link MSSSignatureReq.AdditionalServices }
+     * 
+     */
+    public MSSSignatureReq.AdditionalServices createMSSSignatureReqAdditionalServices() {
+        return new MSSSignatureReq.AdditionalServices();
+    }
+
+    /**
+     * Create an instance of {@link MSSSignatureResp }
+     * 
+     */
+    public MSSSignatureResp createMSSSignatureResp() {
+        return new MSSSignatureResp();
+    }
+
+    /**
+     * Create an instance of {@link SignatureType }
+     * 
+     */
+    public SignatureType createSignatureType() {
+        return new SignatureType();
+    }
+
+    /**
      * Create an instance of {@link StatusType }
      * 
      */
     public StatusType createStatusType() {
         return new StatusType();
-    }
-
-    /**
-     * Create an instance of {@link MSSStatusResp }
-     * 
-     */
-    public MSSStatusResp createMSSStatusResp() {
-        return new MSSStatusResp();
     }
 
     /**
@@ -110,11 +118,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MSSProfileResp }
+     * Create an instance of {@link MSSStatusResp }
      * 
      */
-    public MSSProfileResp createMSSProfileResp() {
-        return new MSSProfileResp();
+    public MSSStatusResp createMSSStatusResp() {
+        return new MSSStatusResp();
     }
 
     /**
@@ -126,19 +134,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link DataType }
+     * Create an instance of {@link MSSProfileResp }
      * 
      */
-    public DataType createDataType() {
-        return new DataType();
+    public MSSProfileResp createMSSProfileResp() {
+        return new MSSProfileResp();
     }
 
     /**
-     * Create an instance of {@link MSSSignatureReq.AdditionalServices }
+     * Create an instance of {@link MSSReceiptReq }
      * 
      */
-    public MSSSignatureReq.AdditionalServices createMSSSignatureReqAdditionalServices() {
-        return new MSSSignatureReq.AdditionalServices();
+    public MSSReceiptReq createMSSReceiptReq() {
+        return new MSSReceiptReq();
     }
 
     /**
@@ -158,19 +166,19 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link MSSReceiptReq }
-     * 
-     */
-    public MSSReceiptReq createMSSReceiptReq() {
-        return new MSSReceiptReq();
-    }
-
-    /**
      * Create an instance of {@link MeshMemberType }
      * 
      */
     public MeshMemberType createMeshMemberType() {
         return new MeshMemberType();
+    }
+
+    /**
+     * Create an instance of {@link AdditionalServiceType }
+     * 
+     */
+    public AdditionalServiceType createAdditionalServiceType() {
+        return new AdditionalServiceType();
     }
 
     /**
@@ -187,14 +195,6 @@ public class ObjectFactory {
      */
     public StatusDetailType createStatusDetailType() {
         return new StatusDetailType();
-    }
-
-    /**
-     * Create an instance of {@link AdditionalServiceType }
-     * 
-     */
-    public AdditionalServiceType createAdditionalServiceType() {
-        return new AdditionalServiceType();
     }
 
 }

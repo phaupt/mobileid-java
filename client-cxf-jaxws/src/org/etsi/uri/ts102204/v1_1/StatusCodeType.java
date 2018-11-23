@@ -10,21 +10,21 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für StatusCodeType complex type.
+ * <p>Java class for StatusCodeType complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="StatusCodeType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element name="StatusCode" type="{http://uri.etsi.org/TS102204/v1.1.2#}StatusCodeType" minOccurs="0"/>
- *       &lt;/sequence>
- *       &lt;attribute name="Value" use="required" type="{http://www.w3.org/2001/XMLSchema}integer" />
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="StatusCodeType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="StatusCode" type="{http://uri.etsi.org/TS102204/v1.1.2#}StatusCodeType" minOccurs="0"/&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attribute name="Value" use="required" type="{http://www.w3.org/2001/XMLSchema}integer" /&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -41,7 +41,7 @@ public class StatusCodeType {
     protected BigInteger value;
 
     /**
-     * Ruft den Wert der statusCode-Eigenschaft ab.
+     * Gets the value of the statusCode property.
      * 
      * @return
      *     possible object is
@@ -53,7 +53,7 @@ public class StatusCodeType {
     }
 
     /**
-     * Legt den Wert der statusCode-Eigenschaft fest.
+     * Sets the value of the statusCode property.
      * 
      * @param value
      *     allowed object is
@@ -65,7 +65,7 @@ public class StatusCodeType {
     }
 
     /**
-     * Ruft den Wert der value-Eigenschaft ab.
+     * Gets the value of the value property.
      * 
      * @return
      *     possible object is
@@ -77,7 +77,7 @@ public class StatusCodeType {
     }
 
     /**
-     * Legt den Wert der value-Eigenschaft fest.
+     * Sets the value of the value property.
      * 
      * @param value
      *     allowed object is

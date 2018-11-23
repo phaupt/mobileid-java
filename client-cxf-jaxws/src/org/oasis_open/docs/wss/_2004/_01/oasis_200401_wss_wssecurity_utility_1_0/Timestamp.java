@@ -22,26 +22,26 @@ import org.w3c.dom.Element;
 
 
 /**
- * <p>Java-Klasse für TimestampType complex type.
+ * <p>Java class for TimestampType complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="TimestampType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;sequence>
- *         &lt;element ref="{http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd}Created" minOccurs="0"/>
- *         &lt;element ref="{http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd}Expires" minOccurs="0"/>
- *         &lt;choice maxOccurs="unbounded" minOccurs="0">
- *           &lt;any processContents='lax' namespace='##other'/>
- *         &lt;/choice>
- *       &lt;/sequence>
- *       &lt;attGroup ref="{http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd}commonAtts"/>
- *       &lt;anyAttribute processContents='lax' namespace='##other'/>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="TimestampType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element ref="{http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd}Created" minOccurs="0"/&gt;
+ *         &lt;element ref="{http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd}Expires" minOccurs="0"/&gt;
+ *         &lt;choice maxOccurs="unbounded" minOccurs="0"&gt;
+ *           &lt;any processContents='lax' namespace='##other'/&gt;
+ *         &lt;/choice&gt;
+ *       &lt;/sequence&gt;
+ *       &lt;attGroup ref="{http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd}commonAtts"/&gt;
+ *       &lt;anyAttribute processContents='lax' namespace='##other'/&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -70,7 +70,7 @@ public class Timestamp {
     private Map<QName, String> otherAttributes = new HashMap<QName, String>();
 
     /**
-     * Ruft den Wert der created-Eigenschaft ab.
+     * Gets the value of the created property.
      * 
      * @return
      *     possible object is
@@ -82,7 +82,7 @@ public class Timestamp {
     }
 
     /**
-     * Legt den Wert der created-Eigenschaft fest.
+     * Sets the value of the created property.
      * 
      * @param value
      *     allowed object is
@@ -94,7 +94,7 @@ public class Timestamp {
     }
 
     /**
-     * Ruft den Wert der expires-Eigenschaft ab.
+     * Gets the value of the expires property.
      * 
      * @return
      *     possible object is
@@ -106,7 +106,7 @@ public class Timestamp {
     }
 
     /**
-     * Legt den Wert der expires-Eigenschaft fest.
+     * Sets the value of the expires property.
      * 
      * @param value
      *     allowed object is
@@ -147,7 +147,7 @@ public class Timestamp {
     }
 
     /**
-     * Ruft den Wert der id-Eigenschaft ab.
+     * Gets the value of the id property.
      * 
      * @return
      *     possible object is
@@ -159,7 +159,7 @@ public class Timestamp {
     }
 
     /**
-     * Legt den Wert der id-Eigenschaft fest.
+     * Sets the value of the id property.
      * 
      * @param value
      *     allowed object is

@@ -11,21 +11,21 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für MSS_ProfileRespType complex type.
+ * <p>Java class for MSS_ProfileRespType complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="MSS_ProfileRespType">
- *   &lt;complexContent>
- *     &lt;extension base="{http://uri.etsi.org/TS102204/v1.1.2#}MessageAbstractType">
- *       &lt;sequence>
- *         &lt;element name="SignatureProfile" type="{http://uri.etsi.org/TS102204/v1.1.2#}mssURIType" maxOccurs="unbounded" minOccurs="0"/>
- *         &lt;element name="Status" type="{http://uri.etsi.org/TS102204/v1.1.2#}StatusType"/>
- *       &lt;/sequence>
- *     &lt;/extension>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="MSS_ProfileRespType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;extension base="{http://uri.etsi.org/TS102204/v1.1.2#}MessageAbstractType"&gt;
+ *       &lt;sequence&gt;
+ *         &lt;element name="SignatureProfile" type="{http://uri.etsi.org/TS102204/v1.1.2#}mssURIType" maxOccurs="unbounded" minOccurs="0"/&gt;
+ *         &lt;element name="Status" type="{http://uri.etsi.org/TS102204/v1.1.2#}StatusType"/&gt;
+ *       &lt;/sequence&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -75,7 +75,7 @@ public class MSSProfileResp
     }
 
     /**
-     * Ruft den Wert der status-Eigenschaft ab.
+     * Gets the value of the status property.
      * 
      * @return
      *     possible object is
@@ -87,7 +87,7 @@ public class MSSProfileResp
     }
 
     /**
-     * Legt den Wert der status-Eigenschaft fest.
+     * Sets the value of the status property.
      * 
      * @param value
      *     allowed object is

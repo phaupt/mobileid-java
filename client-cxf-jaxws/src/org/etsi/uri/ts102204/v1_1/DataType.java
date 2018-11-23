@@ -9,19 +9,19 @@ import javax.xml.bind.annotation.XmlValue;
 
 
 /**
- * <p>Java-Klasse für DataType complex type.
+ * <p>Java class for DataType complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="DataType">
- *   &lt;simpleContent>
- *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema>string">
- *       &lt;attribute name="MimeType" type="{http://www.w3.org/2001/XMLSchema}string" />
- *       &lt;attribute name="Encoding" type="{http://www.w3.org/2001/XMLSchema}string" />
- *     &lt;/extension>
- *   &lt;/simpleContent>
- * &lt;/complexType>
+ * &lt;complexType name="DataType"&gt;
+ *   &lt;simpleContent&gt;
+ *     &lt;extension base="&lt;http://www.w3.org/2001/XMLSchema&gt;string"&gt;
+ *       &lt;attribute name="MimeType" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *       &lt;attribute name="Encoding" type="{http://www.w3.org/2001/XMLSchema}string" /&gt;
+ *     &lt;/extension&gt;
+ *   &lt;/simpleContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -40,7 +40,7 @@ public class DataType {
     protected String encoding;
 
     /**
-     * Ruft den Wert der value-Eigenschaft ab.
+     * Gets the value of the value property.
      * 
      * @return
      *     possible object is
@@ -52,7 +52,7 @@ public class DataType {
     }
 
     /**
-     * Legt den Wert der value-Eigenschaft fest.
+     * Sets the value of the value property.
      * 
      * @param value
      *     allowed object is
@@ -64,7 +64,7 @@ public class DataType {
     }
 
     /**
-     * Ruft den Wert der mimeType-Eigenschaft ab.
+     * Gets the value of the mimeType property.
      * 
      * @return
      *     possible object is
@@ -76,7 +76,7 @@ public class DataType {
     }
 
     /**
-     * Legt den Wert der mimeType-Eigenschaft fest.
+     * Sets the value of the mimeType property.
      * 
      * @param value
      *     allowed object is
@@ -88,7 +88,7 @@ public class DataType {
     }
 
     /**
-     * Ruft den Wert der encoding-Eigenschaft ab.
+     * Gets the value of the encoding property.
      * 
      * @return
      *     possible object is
@@ -100,7 +100,7 @@ public class DataType {
     }
 
     /**
-     * Legt den Wert der encoding-Eigenschaft fest.
+     * Sets the value of the encoding property.
      * 
      * @param value
      *     allowed object is

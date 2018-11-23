@@ -14,22 +14,22 @@ import fi.ficom.mss.ts102204.v1_0.ServiceResponses;
 
 
 /**
- * <p>Java-Klasse für StatusDetailType complex type.
+ * <p>Java class for StatusDetailType complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="StatusDetailType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice maxOccurs="unbounded" minOccurs="0">
- *         &lt;element ref="{http://mss.ficom.fi/TS102204/v1.0.0#}ServiceResponses"/>
- *         &lt;element ref="{http://www.swisscom.ch/TS102204/ext/v1.0.0}ReceiptRequestExtension"/>
- *         &lt;element ref="{http://www.swisscom.ch/TS102204/ext/v1.0.0}ReceiptResponseExtension"/>
- *       &lt;/choice>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="StatusDetailType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;choice maxOccurs="unbounded" minOccurs="0"&gt;
+ *         &lt;element ref="{http://mss.ficom.fi/TS102204/v1.0.0#}ServiceResponses"/&gt;
+ *         &lt;element ref="{http://www.swisscom.ch/TS102204/ext/v1.0.0}ReceiptRequestExtension"/&gt;
+ *         &lt;element ref="{http://www.swisscom.ch/TS102204/ext/v1.0.0}ReceiptResponseExtension"/&gt;
+ *       &lt;/choice&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -41,9 +41,9 @@ import fi.ficom.mss.ts102204.v1_0.ServiceResponses;
 public class StatusDetailType {
 
     @XmlElementRefs({
-        @XmlElementRef(name = "ServiceResponses", namespace = "http://mss.ficom.fi/TS102204/v1.0.0#", type = ServiceResponses.class, required = false),
         @XmlElementRef(name = "ReceiptRequestExtension", namespace = "http://www.swisscom.ch/TS102204/ext/v1.0.0", type = JAXBElement.class, required = false),
-        @XmlElementRef(name = "ReceiptResponseExtension", namespace = "http://www.swisscom.ch/TS102204/ext/v1.0.0", type = JAXBElement.class, required = false)
+        @XmlElementRef(name = "ReceiptResponseExtension", namespace = "http://www.swisscom.ch/TS102204/ext/v1.0.0", type = JAXBElement.class, required = false),
+        @XmlElementRef(name = "ServiceResponses", namespace = "http://mss.ficom.fi/TS102204/v1.0.0#", type = ServiceResponses.class, required = false)
     })
     protected List<Object> serviceResponsesAndReceiptRequestExtensionsAndReceiptResponseExtensions;
 
@@ -65,9 +65,9 @@ public class StatusDetailType {
      * 
      * <p>
      * Objects of the following type(s) are allowed in the list
+     * {@link JAXBElement }{@code <}{@link ReceiptExtensionType }{@code >}
+     * {@link JAXBElement }{@code <}{@link ReceiptExtensionType }{@code >}
      * {@link ServiceResponses }
-     * {@link JAXBElement }{@code <}{@link ReceiptExtensionType }{@code >}
-     * {@link JAXBElement }{@code <}{@link ReceiptExtensionType }{@code >}
      * 
      * 
      */

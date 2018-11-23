@@ -8,20 +8,20 @@ import javax.xml.bind.annotation.XmlType;
 
 
 /**
- * <p>Java-Klasse für SignatureType complex type.
+ * <p>Java class for SignatureType complex type.
  * 
- * <p>Das folgende Schemafragment gibt den erwarteten Content an, der in dieser Klasse enthalten ist.
+ * <p>The following schema fragment specifies the expected content contained within this class.
  * 
  * <pre>
- * &lt;complexType name="SignatureType">
- *   &lt;complexContent>
- *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType">
- *       &lt;choice>
- *         &lt;element name="Base64Signature" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/>
- *       &lt;/choice>
- *     &lt;/restriction>
- *   &lt;/complexContent>
- * &lt;/complexType>
+ * &lt;complexType name="SignatureType"&gt;
+ *   &lt;complexContent&gt;
+ *     &lt;restriction base="{http://www.w3.org/2001/XMLSchema}anyType"&gt;
+ *       &lt;choice&gt;
+ *         &lt;element name="Base64Signature" type="{http://www.w3.org/2001/XMLSchema}base64Binary"/&gt;
+ *       &lt;/choice&gt;
+ *     &lt;/restriction&gt;
+ *   &lt;/complexContent&gt;
+ * &lt;/complexType&gt;
  * </pre>
  * 
  * 
@@ -36,7 +36,7 @@ public class SignatureType {
     protected byte[] base64Signature;
 
     /**
-     * Ruft den Wert der base64Signature-Eigenschaft ab.
+     * Gets the value of the base64Signature property.
      * 
      * @return
      *     possible object is
@@ -47,7 +47,7 @@ public class SignatureType {
     }
 
     /**
-     * Legt den Wert der base64Signature-Eigenschaft fest.
+     * Sets the value of the base64Signature property.
      * 
      * @param value
      *     allowed object is

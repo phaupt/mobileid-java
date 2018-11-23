@@ -1,6 +1,6 @@
 # client-cxf-jaxws
 A sample JAX-WS based client implementation that is using the Swisscom Mobile ID SOAP interface. 
-Stubs were generated with Apache CXF 3.0 using the official Swisscom WSDL `mobileid.wsdl` (see details in `generateStub.bat`).
+Stubs were generated with Apache CXF 3.0 using the official Swisscom WSDL `mobileid.wsdl`.
 
 More GitHub samples on Mobile ID can be found at https://github.com/SCS-CBU-CED-IAM
 Futher information about the Swisscom Mobile ID Service can be found at http://swisscom.com/mid, i.e. you should read the Mobile ID Client Reference Guide.
@@ -12,6 +12,10 @@ You will need your own AP_ID, DTBS-Prefix and SSL Key.
 - Refer to `mobileid.properties` configuration file and modify the configuration properties accordingly.
 - Refer to the class `ch.swisscom.mid.client.Test_Client` and modify the variables accordingly
 - The `keystore.jks` must contain your SSL Key for the Swisscom Mobile ID service.
+
+##### Generate Stub Files
+
+$ ./apache-cxf-3.2.7/bin/wsdl2java -d src -verbose -b ./bindings.xml ./mobileid.wsdl
 
 ##### Usage
 
