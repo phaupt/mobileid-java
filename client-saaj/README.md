@@ -59,10 +59,4 @@ Response SOAP Message:
 
 Compile the source file: `javac -d ./class -cp . ./src/com/swisscom/mid/client/*.java`
 
-Note: The class files are generated in a directory hierarchy which reflects the given package structure: `./class/com/swisscom/mid/client/*.class`
-
 Run the application: `java -cp ./class com.swisscom.mid.client.MobileidSign`
-
-As an alternative you may run the JAR archive: `java -cp ".:./jar/*" com.swisscom.mid.client.MobileidSign`
-
-If you're on Windows then use a semicolon ; instead of the colon : (see `MobileidSign.bat`)
