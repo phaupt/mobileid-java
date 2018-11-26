@@ -15,7 +15,9 @@ You will need your own AP_ID, DTBS-Prefix and SSL Key.
 
 ##### Generate Stub Files
 
-$ ./apache-cxf-3.2.7/bin/wsdl2java -d src -verbose -b ./bindings.xml ./mobileid.wsdl
+```
+$ ./apache-cxf-3.2.7/bin/wsdl2java -d src -b ./bindings.xml ./mobileid.wsdl
+```
 
 ##### Usage
 
